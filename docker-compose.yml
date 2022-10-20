@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  db:
+    container_name: db
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: northwind
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgresql_bin:/usr/lib/postgresql
+      - postgresql_data:/var/lib/postgresql/data
+      - ./northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
+      - ./files:/files
+    ports:
+      - 55432:5432
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: abdullah@local.com
+      PGADMIN_DEFAULT_PASSWORD: 123456
+    ports:
+      - 5050:80
+  
+
+
+volumes:
+  postgresql_data:
+    driver: local
+  postgresql_bin:
+    driver: local
+  
