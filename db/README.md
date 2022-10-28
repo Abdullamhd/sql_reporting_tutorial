@@ -10,7 +10,8 @@ git clone https://github.com/Abdullamhd/postgres_setup.git
 
 ### Change directory to the repository
 ```bash
-cd postgres_setup
+cd sql_reporting_tutorial
+cd db
 ```
 
 
