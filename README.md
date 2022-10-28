@@ -7,12 +7,14 @@
 
 
 ### For following this tutorial, you will need:
+- GIT (Version Control System)
 - A PostgreSQL database with Data
-- Azure Data Studio installed
 - Docker installed
 - VS Code installed (optional)
 - Docker Compose installed
-- Docker Extension installed in VS Code
+- Docker Extension installed in VS Code(Optional but recommended)
+- Azure Data Studio installed
+
 
 ### for setup the environment, you can follow the following link:
 [Setup the environment](db/README.md)
