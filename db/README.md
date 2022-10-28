@@ -20,7 +20,8 @@ docker-compose up -d
 ```
 
 
-### Open the browser and go to the following link
+### Open the browser and go to the following link (Optional)
+
 ```bash
 http://localhost:5050
 ```
