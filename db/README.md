@@ -43,6 +43,19 @@ password:postgres
 ```
 
 
+### Connection info for Azure Data Studio
+
+```bash
+
+server:localhost
+port:5432
+username:postgres
+password:postgres
+database:northwind
+
+```
+
+
 
 
 
